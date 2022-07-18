@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+}
+#instructions {
+    background-color: pink;
+    padding: 6px;
+    margin: 6px;
+}
+#orderForm {
+    width: 75%;
+    margin: 20px auto;
+}
+#receipt {
+    background-color: #996600;
+    color: yellow;
+    padding: 6px;
+}
+/* .myButtons {
+    background-color: #996600;
+    color: yellow;
+    padding: 6px;
+    margin: 6px;
+}
+#placeOrder3 {
+    background-color: #036615;
+    color: rgb(255, 0, 0);
+    padding: 6px;
+    margin: 6px;
+} */

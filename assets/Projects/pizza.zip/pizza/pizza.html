@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='pizza.css'>
+
+</head>
+<body>
+    <div id="orderForm">
+        <label>
+            Number of Pizzas?
+            <input type="number" id="numPizza"/>
+        </label>
+        <br>
+        <br>
+        <label>
+            Kind of Pizza?
+            <select id="typePizza">
+                <option value="Pineapple">Pineapple</option>
+                <option value="Something Meaty">Something Meaty</option>
+                <option value="Pepperoni">Pepperoni</option>
+                <option value="Supreme">Supreme</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label>
+            Location?
+            <select id="deliveryLocation">
+                <option value="Midrand">Midrand</option>
+                <option value="Waterfall">Waterfall</option>
+                <option value="Sunninghill">Sunninghill</option>
+                <option value="Rivonia">Rivonia</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label>
+            Is it your birthday?
+            <select id="birthday">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <button type="button" id="placeOrder">Place Order</button>
+    </div>
+    <div id="displayResults"></div>
+
+    <script src='pizza.js'></script>
+</body>
+</html>

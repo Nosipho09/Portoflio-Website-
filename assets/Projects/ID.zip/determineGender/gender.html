@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Determine Gender</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="gender.css" />
+  </head>
+  <body>
+    <div id="instructions">
+      <h3>
+        If you have a website or app that requires users to submit their South
+        African identity number, you will definitely want to make sure it’s
+        valid. The South African ID is validated by matching the following
+        criteria.
+      <p>
+        The total number of digits must be 13 and the format is [YYMMDD] [GGGG]
+        [C] [A] [Z]
+      </p>
+      <ul>
+        <li>[YYMMDD] for the ID holder’s date of birth</li>
+        <li>
+          [GGGG] for ID holder’s gender. 0000 – 4999 for female and 5000 – 9999
+          for male.
+        </li>
+        <li>
+          [C] is their citizenship status. 0 is a South African Citizen and 1 is
+          a permanent resident.
+        </li>
+        <li>
+          [A] can be any number but, at the time of writing this post, is
+          usually an 8.
+        </li>
+        <li>
+          [Z] is a check digit which uses the Luhn Algorithm to validate the
+          rest of the ID number.
+        </li>
+      </ul>
+    </div>
+    <div id="error"></div>
+
+    <form id="idCheck">
+      <p>Enter the ID Number: <input id="idnumber" /></p>
+      <p><input type="submit" value="Check" /></p>
+    </form>
+
+    <div id="result"></div>
+  </body>
+</html>

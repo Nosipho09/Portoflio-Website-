@@ -1,0 +1,4 @@
+
+
+1) Change the story, so that he does not find the wrapped sandwiches.
+2) Extend the story and add two more answers(Starve or Eat gizmo)/error.

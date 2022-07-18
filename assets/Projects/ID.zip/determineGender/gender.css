@@ -1,0 +1,14 @@
+html, body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    overflow:  hidden;
+}
+
+#instructions {
+    width: 100%;
+    color:azure;
+    height: 80%;
+    background-color:black;
+    overflow-y: scroll;
+
+}

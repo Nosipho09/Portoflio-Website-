@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Guessing Game</title>
+    <style>
+        #container{
+            margin:auto; 
+            border:5px solid lightgray;
+            font-size: 30px;
+            padding: 10px;
+            text-align:center;
+            height: 260px;
+            width: 600px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+ <p>Guess a number between 1 and 10 </p>
+ <p id="outputText">Enter a number below</p>
+ <input id="userInput">
+ <button id="enterButton">Enter</button>
+ <button id="againButton">Play Again</button>
+
+</div>
+<script>
+   var enterButton = document.getElementById('enterButton');
+    var againButton = document.getElementById('againButton');
+    var output = document.getElementById('outputText');
+ 
+    var randomNumber = Math.floor(Math.random()*10) +1;
+ 
+    function checkNumber(){
+      var input = document.getElementById('userInput').value;
+      if(input == randomNumber){
+        output.innerHTML="You guessed right "+ ", "+ " it was "+ randomNumber;
+        output.style.color="green";
+      }
+      else if(input>randomNumber && input<10){
+        output.innerHTML="You guessed too high"
+        clearInput();
+      }
+      else if(input<randomNumber && input>1){
+        output.innerHTML="You guessed too low"
+        clearInput();
+      }
+      else{
+        displayOutput.innerHTML = "You have no more attempts. Play Again!"
+        clearInput();
+      }
+
+    function clearInput(){
+    let input = document.getElementById("userInput");
+    input.value = "";
+    }
+    
+    }
+   
+    enterButton.addEventListener('click', checkNumber);
+    againButton.addEventListener('click', function(){
+      location.reload();
+    })
+
+</script>
+</body>
+</html>
