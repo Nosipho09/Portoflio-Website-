@@ -15,7 +15,7 @@ Right-click on the index.html file and select "Open with Live Server".
 
 # Usage
 You can scroll through and read more about myself. 
-You can click on the project and see how they work. 
+You can click on the projects games to see how they work. 
 
 
 ## Credits
